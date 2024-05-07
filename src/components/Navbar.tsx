@@ -10,10 +10,21 @@ import {
 
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
+import ArrowDown from "@/assets/icons/ArrowDown";
+
 const navigation = [
   { name: "Imobiliárias", href: "#", current: true },
   { name: "Quero me Associar", href: "#", current: false },
-  { name: "Sobre", href: "#", current: false },
+  {
+    name: (
+      <div className="flex items-center gap-x-1">
+        Sobre
+        <ArrowDown />
+      </div>
+    ),
+    href: "#",
+    current: false,
+  },
   { name: "Blog", href: "#", current: false },
 ];
 
@@ -35,9 +46,9 @@ const Navbar = () => {
 
             <div className="hidden lg:block">
               <div className="flex items-center lg:space-x-1 xl:space-x-10">
-                {navigation.map((item) => (
+                {navigation.map((item, index) => (
                   <a
-                    key={item.name}
+                    key={index}
                     href={item.href}
                     className={
                       "text-custom-gray-555555 hover:bg-custom-orange-E95808 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
@@ -75,9 +86,9 @@ const Navbar = () => {
 
           <DisclosurePanel className="lg:hidden">
             <div className="fixed w-full mt-[4em] space-y-1 px-2 pb-3 pt-2">
-              {navigationMobile.map((item) => (
+              {navigationMobile.map((item, index) => (
                 <DisclosureButton
-                  key={item.name}
+                  key={index}
                   as="a"
                   href={item.href}
                   className={
