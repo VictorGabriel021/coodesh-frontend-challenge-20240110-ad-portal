@@ -20,7 +20,7 @@ Clone o repositório:
 - git clone https://github.com/VictorGabriel021/coodesh-frontend-challenge-20240110-ad-portal.git
 
 Navegue até o diretório do projeto:
-- cd ap-portal
+- cd coodesh-frontend-challenge-20240110-ad-portal/
 
 Instale as dependências:
 - npm install
