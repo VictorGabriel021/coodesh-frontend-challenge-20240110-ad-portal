@@ -6,9 +6,9 @@
 O Projeto Ad Portal é uma aplicação web voltada para o mercado imobiliário, proporcionando aos usuários uma plataforma intuitiva para explorar propriedades, buscar anúncios e obter informações relevantes sobre o setor.
 
 # Tecnologias Utilizadas
-Linguagem: TypeScript
-Framework: NextJs
-Tecnologias: HTML5, CSS3, TailwindCss, EmbraCarousel, Headlessui para UI, ReactIcons
+- Linguagem: TypeScript
+- Framework: NextJs
+- Tecnologias: HTML5, CSS3, TailwindCss, EmbraCarousel, Headlessui para UI, ReactIcons
 
 # Instalação e Uso
 Para instalar e usar o projeto, siga estas etapas:
@@ -40,11 +40,6 @@ Identificação da necessidade de utilizar um carousel de terceiros para exibir 
 Desenvolvimento de uma UI personalizada para a navbar, incluindo o efeito de menu hamburguer para dispositivos móveis.
 Decisão de criar o componente de pesquisa do zero, em vez de utilizar um componente de UI pré-existente.
 
-## Desenvolvimento Progressivo:
-Início do desenvolvimento pela navbar, utilizando flexbox e implementando a navegação móvel posteriormente.
-Desenvolvimento das telas estáticas, como banners e informações adicionais da empresa, com foco na legibilidade e adaptação para dispositivos móveis.
-Implementação de componentes específicos, como os menus de tipos de propriedades e anúncios com carousel, utilizando abordagens de componentização e responsividade.
-
 # Componentes Reutilizáveis:
 
 ## Botão Personalizado (botaoCustom):
@@ -63,7 +58,7 @@ Dois tipos de menus de navegação criados: um com setas e outro fixo para três
 Objetivo é utilizar em mais de um lugar, porém ainda não consolidado em um único componente.
 
 # Componentes da Página Inicial (Home):
-# #Navbar:
+## Navbar:
 Componente de navegação superior presente em toda a aplicação.
 
 ## Banners Estáticos:
@@ -96,7 +91,7 @@ Componente de busca interativa que ajuda os usuários a encontrar propriedades d
 ## Componente de Card com Menus e Setas:
 Cards expansíveis com menus e setas para navegação rápida entre diferentes seções da aplicação.
 
-##bAnúncios com Carousel:
+## Anúncios com Carousel:
 Carousel utilizado para exibir anúncios de propriedades de forma dinâmica e atrativa.
 
 ## Componente de Pesquisa:
