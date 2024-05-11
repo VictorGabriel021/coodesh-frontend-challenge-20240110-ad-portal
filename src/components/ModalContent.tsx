@@ -21,10 +21,8 @@ const ModalContent = ({
         {title}
       </h2>
       <p className="text-custom-gray-808587 mt-5 mb-9">{description}</p>
-      <div className="w-[max-content]">
-        <CustomButton color="custom-purple-8224CB mb-5">
-          {buttonText}
-        </CustomButton>
+      <div className="w-[max-content] mb-5">
+        <CustomButton>{buttonText}</CustomButton>
       </div>
 
       {children}

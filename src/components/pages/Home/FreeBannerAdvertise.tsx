@@ -9,7 +9,7 @@ import CustomButton from "../../Button/CustomButton";
 const FreeBannerAdvertise = () => {
   return (
     <>
-      <div className="flex items-center md:border md:border-solid border-gray-300 rounded-lg overflow-hidden max-w-[1250px] mx-auto flex-wrap-reverse md:flex-nowrap">
+      <div className="flex items-center md:border md:border-solid border-gray-300 rounded-lg overflow-hidden max-w-[1250px] mx-auto flex-wrap-reverse md:flex-nowrap mt-0 sm:mt-20">
         <Image
           src={AdvertiseForFree}
           alt="Advertise For Free"
