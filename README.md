@@ -1,81 +1,117 @@
-# Front-end Challenge - Netimóveis 20240110
-
-## Introdução
-
-Este é o nosso case técnico para Front-end! A ideia é que você possa mostrar toda sua expertise técnica através dele :D
-Estamos animados para te ver brilhar novamente!
-
-[SPOILER] As instruções de entrega e apresentação do challenge estão no final deste Readme (=
-
-### Antes de começar
-
-- Prepare o projeto para ser disponibilizado no Github, copiando o conteúdo deste repositório para o seu (ou utilize o fork do projeto e aponte para o Github). Confirme que a visibilidade do projeto é pública (não esqueça de colocar no readme a referência a este challenge);
-- O projeto deve utilizar a Linguagem específica ou Framework na sua Vaga (caso esteja se candidatando). Por exempo: Next.js, React e entre outras;
-- Considere como *deadline 5 dias a partir do início do desafio*. Caso tenha sido convidado a realizar o teste e não seja possível concluir dentro deste período, avise a pessoa que o convidou para receber instruções sobre o que fazer.
-- Documentar todo o processo de investigação para o desenvolvimento da atividade (README.md no seu repositório); os resultados destas tarefas são tão importantes do que o seu processo de pensamento e decisões à medida que as completa, por isso tente documentar e apresentar os seus hipóteses e decisões na medida do possível.
-
-### Instruções iniciais obrigatórias
-
-- Utilizar o framework Next.js (opte pela versão que preferir)
-- Utilizar o framework Tailwind CSS para a UI (pode usar outros, porém, conta muito para nós usar o Tailwind CSS ) ♥
-- Utilizar classes para os dados.
-- Seguir o protótipo da tela
-- 
-
-### Será um enorme **diferencial** para a gente se você: 
-- Optar por usar **TypeScript**.
-- Aplicar **Testes Unitários** em Componentes.
-
-### Instruções
-
-Vamos disponibilizar para você dois JSONs como fonte de dados. 
-
-- Um será o [place.json](./assets/place.json), que contém as informações de 5 cidades brasileiras. 
-- O segundo será o [flats.json](./assets/flats.json), nele está o relacionamento cidade versus hotéis.
-
-`Também iremos disponibilizar o protótipo da tela que você deverá nos entregar.`
-
-### Home
-
-Estude o Figma para trabalhar no projeto com os requisitos essênciais:
-
-[Figma](https://www.figma.com/file/Bbwa2wakxxcUMZB4Y4nXke/Teste-Coodesh?type=design&t=gJx1Cj6soxAtWvks-6)
-
-#### Formulário
-
-- O campo Localização deverá listar as opções no formato 'Belo Horizonte, Minas Gerais'. Quando selecionada uma opção, ela deverá ser exibida como 'Belo Horizonte, BH'.
-- O campo Nº de Quartos deverá ser um Dropdown para informar a quantidade e selecionar os Tipos
-- O botão deverá 'Buscar' terar alguns comportamentos ao passar o Mouse, seguindo as especificações do Figma
-
-#### Listagem
-- Apresente as imagens do imóveis em um carrossel.
-
-### Extras
-- Desenhar os demais elementos da página
-- Trabalhar com testes unitários
-- Header flutuante
-
 ## Readme do Repositório
 
-- Deve conter o título do projeto
-- Uma descrição sobre o projeto em frase
-- Deve conter uma lista com linguagem, framework e/ou tecnologias usadas
-- Como instalar e usar o projeto (instruções)
-- Não esqueça o [.gitignore](https://www.toptal.com/developers/gitignore)
-- Se está usando github pessoal, referencie que é um challenge by coodesh:
+#Ad Portal
+
+#Descrição
+O Projeto Ad Portal é uma aplicação web voltada para o mercado imobiliário, proporcionando aos usuários uma plataforma intuitiva para explorar propriedades, buscar anúncios e obter informações relevantes sobre o setor.
+
+#Tecnologias Utilizadas
+Linguagem: TypeScript
+Framework: NextJs
+Tecnologias: HTML5, CSS3, TailwindCss, EmbraCarousel, Headlessui para UI, ReactIcons
+
+#Instalação e Uso
+Para instalar e usar o projeto, siga estas etapas:
+
+- Instale a última versão do NodeJs
+
+No seu terminal faça as etapas:
+Clone o repositório:
+- git clone https://github.com/VictorGabriel021/coodesh-frontend-challenge-20240110-ad-portal.git
+
+Navegue até o diretório do projeto:
+- cd ap-portal
+
+Instale as dependências:
+- npm install
+
+Inicie o servidor de desenvolvimento:
+- npm run dev
 
 >  This is a challenge by [Coodesh](https://coodesh.com/)
 
-## Finalização e Instruções para a Apresentação
+# Processo de Desenvolvimento:
 
-1. Adicione o repositório na avaliação
-2. Verifique se o Readme está bom e faça o commit final;
-3. Ao finalizar a entrega do código, enviar para a avaliação no botão "Enviar Código" na parte superior da avaliação
-4. Apresentar o resultado da sua entrega, você terá as instruções para apresentação após "Enviar Código".
+##Análise Inicial:
+Inicialmente, foi realizada uma análise detalhada do design no Figma para identificar todos os elementos e funcionalidades necessárias para o desenvolvimento da aplicação.
 
-## Suporte
+##Decisões Iniciais:
+Identificação da necessidade de utilizar um carousel de terceiros para exibir imagens e cards.
+Desenvolvimento de uma UI personalizada para a navbar, incluindo o efeito de menu hamburguer para dispositivos móveis.
+Decisão de criar o componente de pesquisa do zero, em vez de utilizar um componente de UI pré-existente.
 
-Use o nosso canal no slack: http://bit.ly/32CuOMy para tirar dúvidas sobre o processo ou envie um e-mail para contato@coodesh.com.
+##Desenvolvimento Progressivo:
+Início do desenvolvimento pela navbar, utilizando flexbox e implementando a navegação móvel posteriormente.
+Desenvolvimento das telas estáticas, como banners e informações adicionais da empresa, com foco na legibilidade e adaptação para dispositivos móveis.
+Implementação de componentes específicos, como os menus de tipos de propriedades e anúncios com carousel, utilizando abordagens de componentização e responsividade.
 
+#Componentes Reutilizáveis:
 
+##Botão Personalizado (botaoCustom):
+Componente criado para oferecer botões personalizados em toda a aplicação.
+Recebe um parâmetro opcional para definir a cor do botão.
 
+##Carousel:
+Componente reutilizável utilizado para a rotação de imagens e cards em diferentes partes da aplicação.
+
+##Modal:
+Utilizado para exibir conteúdos adicionais ou interações específicas do usuário.
+Recebe título, descrição, texto do botão e conteúdo extra como parâmetros.
+
+##Navegação de Opções:
+Dois tipos de menus de navegação criados: um com setas e outro fixo para três itens.
+Objetivo é utilizar em mais de um lugar, porém ainda não consolidado em um único componente.
+
+#Componentes da Página Inicial (Home):
+##Navbar:
+Componente de navegação superior presente em toda a aplicação.
+
+##Banners Estáticos:
+Utilizados para exibir mensagens de destaque na página inicial.
+
+##Frase de Efeito com Imagem ao Lado:
+Componente que exibe uma frase impactante acompanhada de uma imagem ilustrativa.
+
+##Componente de Cards e Imagens:
+Cards dinâmicos com imagens e informações relevantes para compradores, vendedores ou curiosos.
+
+##Banner da NetMoveis:
+Banner promocional específico da NetMoveis, exibindo mensagem e imagem relacionadas.
+
+##Menus com Tipos de Propriedades:
+Menus interativos que permitem aos usuários filtrar propriedades por diferentes critérios.
+
+##Informações Extras da Empresa:
+Componente utilizado para fornecer informações adicionais sobre a empresa ou serviço.
+
+##Footer:
+Rodapé da página inicial contendo links úteis e informações de contato.
+
+##Carousel com Estados:
+Carousel dinâmico que destaca os diferentes estados ou regiões abrangidos pelo serviço.
+
+##Componente "Encontre um Lugar":
+Componente de busca interativa que ajuda os usuários a encontrar propriedades de acordo com suas preferências.
+
+##Componente de Card com Menus e Setas:
+Cards expansíveis com menus e setas para navegação rápida entre diferentes seções da aplicação.
+
+##Anúncios com Carousel:
+Carousel utilizado para exibir anúncios de propriedades de forma dinâmica e atrativa.
+
+##Componente de Pesquisa:
+Componente de pesquisa avançada que permite aos usuários filtrar propriedades de acordo com critérios específicos.
+
+##Considerações:
+- A implementação começou pela navbar, utilizando flexbox para organização e responsividade, seguida pela adaptação da navegação para dispositivos móveis.
+- As telas estáticas foram desenvolvidas em seguida, começando pelo banner de "Anuncie sua vaga grátis", onde um desafio foi encontrar uma maneira de ajustar a imagem para maior legibilidade em diferentes dispositivos.
+- O desenvolvimento continuou com o banner de Portugal, onde o principal desafio foi ajustar a imagem e aplicar o efeito de box shadow.
+- Houve dificuldade para ajustar as primeiras imagens, bem como a falta de um padding adequado entre os itens com scroll na página.
+- O componente de busca poderia ter sido melhorado em termos de componentização, estados e estilização da área de seleção dos inputs, porém, devido ao tempo limitado, não foi possível implementar essas melhorias.
+- Testes automatizados não puderam ser realizados devido ao prazo restrito.
+
+##Próximos Passos:
+Melhorias no scroll dos componentes.
+Ajustes na estilização e funcionalidades do componente de pesquisa.
+Refatoração e componentização para melhorar a reutilização dos componentes.
+Aprimoramento da área de seleção de busca.
